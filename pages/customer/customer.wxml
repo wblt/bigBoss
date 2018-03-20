@@ -1,2 +1,27 @@
-<!--pages/customer/customer.wxml-->
-<text>pages/customer/customer.wxml</text>
+<scroll-view scroll-y="true" class="container" bindscrolltoupper="upper" upper-threshold="10" lower-threshold="5" bindscrolltolower="lower"  scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="search flex-wrp">
+      <view class="search-left flex-item">
+          <image src="../img/search.png"></image>
+          <input placeholder="搜索公司名称" placeholder-class="search-placeholder"/>
+      </view>
+      <view class="search-right" bindtap="upper">
+          <image src="../img/lighting.png"></image>
+          <text>录入</text> 
+      </view>
+  </view>
+
+    <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <view class="feed-item">
+            <view class="feed-source">
+                <text>上海豪意网络科技有限公司</text>
+            </view>
+            <view class="feed-text">
+                <text>唐兰林|法定代表人</text>
+            </view>
+            <view class="content">
+                <text class="content-msg">客户下单，客户反馈说4月份订购300台手表，手表价格，还未定</text>
+                <text class="content-more">点击查看更多</text>
+            </view>
+        </view>
+    </block>
+</scroll-view>
