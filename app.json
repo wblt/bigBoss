@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/customer/customer",
+    "pages/dis/dis",
+    "pages/more/more"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor":"#fff",
+    "navigationBarTitleText": "Bigboss",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#ffa200",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "pages/img/xiansuo_select.png",
+        "iconPath": "pages/img/xiansuo_unselect.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/img/kehu_select.png",
+        "iconPath": "pages/img/kehu_unselect.png",
+        "pagePath": "pages/customer/customer",
+        "text": "客户"
+      },
+      {
+        "selectedIconPath": "pages/img/faxian_select.png",
+        "iconPath": "pages/img/faxian_unselect.png",
+        "pagePath": "pages/dis/dis",
+        "text": "发现"
+      },
+      {
+        "selectedIconPath": "pages/img/more_select.png",
+        "iconPath": "pages/img/more_unselect.png",
+        "pagePath": "pages/more/more",
+        "text": "更多"
+      }
+    ]
+  }
+}
