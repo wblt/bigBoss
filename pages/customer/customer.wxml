@@ -2,7 +2,7 @@
   <view class="search flex-wrp">
         <view class="search-left flex-item">
             <image src="../img/search.png"></image>
-            <input placeholder="搜索公司名称" placeholder-class="search-placeholder"/>
+            <input placeholder="搜索公司名称" placeholder-class="search-placeholder" />
         </view>
         <view class="search-right" bindtap="modalinput">
             <image src="../img/add.png"></image>
