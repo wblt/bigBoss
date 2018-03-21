@@ -1,0 +1,5 @@
+<view class='xxcontainer'>
+    <button class = 'add_btn' bindtap="selectDistrict">添加</button>
+
+
+</view>

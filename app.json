@@ -4,7 +4,8 @@
     "pages/customer/customer",
     "pages/dis/dis",
     "pages/more/more",
-    "pages/customer/dynamic/dynamic"
+    "pages/customer/dynamic/dynamic",
+    "pages/more/moreDetail/moreDetail"
   ],
   "window": {
     "backgroundTextStyle": "light",

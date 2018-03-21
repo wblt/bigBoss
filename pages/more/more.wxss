@@ -2,10 +2,10 @@
 .mycontainer {
   background-color: #ffffff;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 .userinfo {
   display: flex;

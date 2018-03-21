@@ -1,0 +1,13 @@
+/* pages/more/moreDetail/moreDetail.wxss */
+.xxcontainer {
+  position:fixed ;
+  box-sizing:border-box;
+  padding:20rpx;
+  text-align:center;
+  width:100%;
+}
+
+.xxcontainer .add_btn {
+  background: #ffa200;
+  color: #ffffff;
+}
