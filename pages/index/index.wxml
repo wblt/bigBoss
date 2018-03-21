@@ -23,6 +23,9 @@
                         <view class="tel">
                                 <text>15274835385</text>
                         </view>
+                        <view class="add">
+                                <text>添加</text>
+                        </view>
                     </view>
                 </view>
             </view>
