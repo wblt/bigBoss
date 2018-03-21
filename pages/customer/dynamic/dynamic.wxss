@@ -1,6 +1,13 @@
 /* pages/customer/dynamic/dynamic.wxss */
 .container{
-  height: 1500rpx;
+  height: auto;
+  
+}
+
+.add_btn {
+  background: #ffa200;
+  color: #ffffff;
+  width: 95%;
 }
 
 .item{
@@ -25,10 +32,17 @@
   vertical-align: middle;
   margin: 0 0 0 0rpx;
   color: #ffa200;
-  font-size: 40rpx;
+  font-size: 42rpx;
+  /* font-weight: bold; */
 }
 .msg {
   color: #000000;
   font-size: 35rpx;
   margin-top: 10rpx; 
+}
+
+.inputtextarea{
+  position:fixed;
+  padding: 10rpx;
+  
 }

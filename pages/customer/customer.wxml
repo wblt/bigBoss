@@ -5,7 +5,7 @@
             <input placeholder="搜索公司名称" placeholder-class="search-placeholder"/>
         </view>
         <view class="search-right" bindtap="modalinput">
-            <image src="../img/lighting.png"></image>
+            <image src="../img/add.png"></image>
             <text>录入</text> 
         </view>
     </view>
