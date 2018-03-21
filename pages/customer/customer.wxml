@@ -2,7 +2,7 @@
   <view class="search flex-wrp">
         <view class="search-left flex-item">
             <image src="../img/search.png"></image>
-            <input placeholder="搜索公司名称" placeholder-class="search-placeholder"/>
+            <input placeholder="搜索公司名称" placeholder-class="search-placeholder" focus="{{focus}}"/>
         </view>
         <view class="search-right" bindtap="modalinput">
             <image src="../img/add.png"></image>
@@ -11,7 +11,7 @@
     </view>
 
   <view class="container">
-      <block wx:for="{{ary}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+      <block wx:for="{{ary}}" wx:key="str" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
           <view class="feed-item" >
               <view class="feed-source">
                   <text>上海豪意网络科技有限公司</text>

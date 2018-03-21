@@ -41,8 +41,6 @@
   margin-top: 10rpx; 
 }
 
-.inputtextarea{
-  position:fixed;
-  padding: 10rpx;
-  
+.inputtextarea {
+  width: 100%;
 }
