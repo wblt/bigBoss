@@ -1,5 +1,5 @@
 .container{
-  height: 1500rpx;
+  height: auto;
 }
 .container .search{
   width: 735rpx;
