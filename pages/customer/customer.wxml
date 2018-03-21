@@ -1,29 +1,38 @@
 <view class="container">
-<view class="search flex-wrp">
-      <view class="search-left flex-item">
-          <image src="../img/search.png"></image>
-          <input placeholder="搜索公司名称" placeholder-class="search-placeholder"/>
-      </view>
-      <view class="search-right" bindtap="upper">
-          <image src="../img/lighting.png"></image>
-          <text>录入</text> 
-      </view>
-  </view>
-
-<view class="container">
-    <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
-        <view class="feed-item">
-            <view class="feed-source">
-                <text>上海豪意网络科技有限公司</text>
-            </view>
-            <view class="feed-text">
-                <text>唐兰林|法定代表人</text>
-            </view>
-            <view class="content">
-                <text class="content-msg">客户下单，客户反馈说4月份订购300台手表，手表价格，还未定</text>
-                <text class="content-more">点击查看更多......</text>
-            </view>
+  <view class="search flex-wrp">
+        <view class="search-left flex-item">
+            <image src="../img/search.png"></image>
+            <input placeholder="搜索公司名称" placeholder-class="search-placeholder"/>
         </view>
-</block>
+        <view class="search-right" bindtap="modalinput">
+            <image src="../img/lighting.png"></image>
+            <text>录入</text> 
+        </view>
+    </view>
+
+  <view class="container">
+      <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+          <view class="feed-item">
+              <view class="feed-source">
+                  <text>上海豪意网络科技有限公司</text>
+              </view>
+              <view class="feed-text">
+                  <text>唐兰林|法定代表人</text>
+              </view>
+              <view class="content">
+                  <text class="content-msg">客户下单，客户反馈说4月份订购300台手表，手表价格，还未定</text>
+                  <text class="content-more" >点击查看更多......</text>
+              </view>
+          </view>
+      </block>
+  </view>
 </view>
-</view>
+
+<modal hidden="{{hiddenmodalput}}" title="请输入下列信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
+    <text>公司</text>
+    <input type='text'placeholder="请输入内容" auto-focus/> 
+    <input type='text'placeholder="请输入内容" auto-focus/>  
+    <input type='text'placeholder="请输入内容" auto-focus/>  
+    <input type='text'placeholder="请输入内容" auto-focus/>  
+    <input type='text'placeholder="请输入内容" auto-focus/>   
+</modal>  
