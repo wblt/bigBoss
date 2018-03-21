@@ -10,7 +10,7 @@
         </view>
   </view>
   <view class="container">
-      <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+      <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="str">
             <view class="feed-item">
                 <view class="feed-source">
                     <text>上海豪意网络科技有限公司</text>

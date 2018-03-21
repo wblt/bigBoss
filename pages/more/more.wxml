@@ -1,2 +1,15 @@
-<!--pages/more/more.wxml-->
-<text>pages/more/more.wxml</text>
+<!--index.wxml-->
+<view class="mycontainer">
+  <view class="info_list">
+    <block wx:for="{{userListInfo}}" wx:key="key">
+    <view class='line'></view>
+        <view class="weui_cell">
+            <view class="weui_cell_hd"><image src="{{item.icon}}"></image></view>
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p"> {{item.text}} </view>
+            </view>
+            <image class='with_arrow' src="../img/arrow.png"></image>
+        </view>
+    </block>
+  </view>
+</view>
