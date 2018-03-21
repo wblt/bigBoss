@@ -76,3 +76,13 @@
   color: #000;
 }
 
+
+.pop-up {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rpx;
+}
+.pop-up text{
+  color: black;
+  width: 160rpx
+}

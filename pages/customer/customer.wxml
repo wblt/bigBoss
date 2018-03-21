@@ -11,8 +11,8 @@
     </view>
 
   <view class="container">
-      <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
-          <view class="feed-item">
+      <block wx:for="{{ary}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+          <view class="feed-item" >
               <view class="feed-source">
                   <text>上海豪意网络科技有限公司</text>
               </view>
@@ -21,7 +21,7 @@
               </view>
               <view class="content">
                   <text class="content-msg">客户下单，客户反馈说4月份订购300台手表，手表价格，还未定</text>
-                  <text class="content-more" >点击查看更多......</text>
+                  <text class="content-more" bindtap="lookmore" data-index="{{idx}}">点击查看更多......</text>
               </view>
           </view>
       </block>
@@ -29,10 +29,25 @@
 </view>
 
 <modal hidden="{{hiddenmodalput}}" title="请输入下列信息" confirm-text="提交" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm"> 
-    <text>公司</text>
-    <input type='text'placeholder="请输入内容" auto-focus/> 
-    <input type='text'placeholder="请输入内容" auto-focus/>  
-    <input type='text'placeholder="请输入内容" auto-focus/>  
-    <input type='text'placeholder="请输入内容" auto-focus/>  
-    <input type='text'placeholder="请输入内容" auto-focus/>   
+    <view class="pop-up">
+       <text>公司:</text>
+       <input type='text'placeholder="请输入内容" auto-focus/> 
+    </view>
+    <view class="pop-up">
+       <text>姓名:</text>
+       <input type='text'placeholder="请输入内容" auto-focus/> 
+    </view>
+    <view class="pop-up">
+       <text>联系电话:</text>
+       <input type='text'placeholder="请输入内容" auto-focus/> 
+    </view>
+    <view class="pop-up">
+       <text>职务:</text>
+       <input type='text'placeholder="请输入内容" auto-focus/> 
+    </view>
+    <view class="pop-up">
+       <text>备注:</text>
+       <input type='text'placeholder="请输入内容" auto-focus/> 
+    </view>
+   
 </modal>  

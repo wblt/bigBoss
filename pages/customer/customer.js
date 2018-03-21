@@ -13,6 +13,7 @@ Component({
   data: {
     hiddenmodalput: true,
         //可以通过hidden是否掩藏弹出框的属性，来指定那个弹出框 
+    ary:[1,2,3,4,5,6,7,8],
   },
 
   /**
@@ -36,6 +37,14 @@ Component({
       this.setData({
         hiddenmodalput: true
       })
-    }  
+    },
+    lookmore:function(e) {
+      var index = parseInt(e.currentTarget.dataset.index);
+      console.log(index);
+
+      wx.navigateTo({
+        url: '../customer/dynamic/dynamic?index='+index
+      })
+    }
   }
 })
