@@ -2,12 +2,49 @@
 .xxcontainer {
   position:fixed ;
   box-sizing:border-box;
-  padding:20rpx;
-  text-align:center;
   width:100%;
 }
 
-.xxcontainer .add_btn {
-  background: #ffa200;
+.xxcontainer text {
+  font-size: 36rpx;
+}
+
+.weui_cell_bd {
+  display: flex;
+  flex-direction: row;
+}
+
+.weui_cell_bd_p {
+  margin-left: 20rpx;
+  color:  #ffa200;
+  font-size: 20px;
+}
+
+.delete_btn {
+  margin-right: 50rpx;
+  background: #fc0d1b;
+  font-size: 16px;
   color: #ffffff;
 }
+
+.xxcontainer .add_btn {
+  margin: 20rpx;
+  background: #ffa200;
+  color: #ffffff;
+  font-size: 16px;
+}
+.item_cell {
+  width: 100%;
+  padding: 30rpx 0rpx 30rpx;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  background: #ffffff;
+}
+
+.detail_list {
+  background: #dadada;
+  margin-top: 20rpx
+}
+
+
+

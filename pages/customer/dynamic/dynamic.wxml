@@ -10,5 +10,5 @@
 </view>
 
 <modal hidden="{{hiddenmodalput}}" title="写下你的动态" confirm-text="发表" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
-   <textarea class='inputtextarea' type='text'placeholder="请输入" auto-focus auto-height adjust-position/>  
+   <textarea class='inputtextarea' type='text' placeholder="请输入" auto-height adjust-position/>  
 </modal>

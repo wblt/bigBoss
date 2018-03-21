@@ -1,5 +1,19 @@
 <view class='xxcontainer'>
     <button class = 'add_btn' bindtap="selectDistrict">添加</button>
 
-
+<view class="detail_list">
+    <block wx:for="{{[1,2,3,4,5]}}" wx:key="key">
+    <navigator url='./moreDetail/moreDetail'>
+        <view class="item_cell">
+            <view class="weui_cell_bd">
+                <view class="weui_cell_bd_p">养老</view>
+                <button class = 'delete_btn' bindtap="selectDistrict">删除</button>
+            </view>
+        </view>
+        </navigator>
+    </block>
+  </view>
 </view>
+
+
+

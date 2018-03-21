@@ -17,6 +17,7 @@
   height: 65rpx;
   font-size: 26rpx;
   float: left;
+  -moz-user-focus: false;
 }
 /* .search-placeholder{
   color: #000000;
