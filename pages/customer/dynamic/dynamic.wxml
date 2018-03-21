@@ -9,6 +9,8 @@
   </block>
 </view>
 
-<modal hidden="{{hiddenmodalput}}" title="写下你的动态" confirm-text="发表" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
-   <textarea class='inputtextarea' type='text' placeholder="请输入" auto-height adjust-position/>  
+<modal catchtouchmove="true" hidden="{{hiddenmodalput}}" title="写下你的动态" confirm-text="发表" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+   <view>
+   <textarea class='inputtextarea' placeholder="请输入" auto-height adjust-position/> 
+   </view> 
 </modal>

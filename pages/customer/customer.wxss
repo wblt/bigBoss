@@ -86,5 +86,11 @@
 }
 .pop-up text{
   color: black;
-  width: 160rpx
+  text-align: center;
+  width: 180rpx 
+}
+
+.pop-up input {
+  margin-left: 20rpx;
+  border:1rpx solid #b8b8b8;
 }
