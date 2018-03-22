@@ -1,2 +1,14 @@
 <!--pages/dis/dis.wxml-->
-<text>pages/dis/dis.wxml</text>
+ <view class="container">
+      <block wx:for="{{[1,2,3,4,5,6,7,8]}}" wx:key="str" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+          <view class="item" >
+              <view class="title">
+                  <text>南通将建22家养老中心</text>
+              </view>
+              <view class="content">
+                  <text class="content-msg">南通将在广东新建很火很嫩呵呵sdsasdasdasdasdasdasdas呵呵呵呵</text>
+                  <text class="content-more" data-index="{{idx}}">点击查看更多......</text>
+              </view>
+          </view>
+      </block>
+  </view>
